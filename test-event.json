@@ -1,0 +1,28 @@
+{
+  "version": "0",
+  "id": "example-event-id",
+  "detail-type": "Object Created",
+  "source": "aws.s3",
+  "account": "123456789012",
+  "time": "2026-09-14T10:00:00Z",
+  "region": "eu-north-1",
+  "resources": [
+    "arn:aws:s3:::example-eventbridge-bucket"
+  ],
+  "detail": {
+    "version": "0",
+    "bucket": {
+      "name": "example-eventbridge-bucket"
+    },
+    "object": {
+      "key": "test-file.txt",
+      "size": 1234,
+      "etag": "example-etag",
+      "sequencer": "example-sequencer"
+    },
+    "request-id": "example-request-id",
+    "requester": "123456789012",
+    "source-ip-address": "192.0.2.1",
+    "reason": "PutObject"
+  }
+}
