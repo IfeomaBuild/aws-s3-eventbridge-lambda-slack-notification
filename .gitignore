@@ -1,0 +1,22 @@
+# Environment variables and secrets
+.env
+.env.*
+*.secret
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local AWS/SAM build output
+.aws-sam/
+
+# Never store local secret files
+secrets.json
